@@ -1,4 +1,7 @@
 package gorain;
+
+import java.util.Scanner;
+
 /**
  * Hello Word
  * Program
@@ -6,10 +9,11 @@ package gorain;
  * February 21
  */
 public class HelloWorld {
-static Scanner 
+static Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
 		System.out.println("Hello, World!!!");
-		
+		String name = scan.nextLine();
+		System.out.println("Hi "+ name);
 
 	}
 
