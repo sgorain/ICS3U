@@ -1,12 +1,12 @@
 package Gorain;
 import java.util.Scanner;
-public class LargestNumber {
 /**
  * Largest Number Finder
  * Finds the largest number from a set of numbers
  * @author Snehan Gorain
  * April 4 2017
  */
+public class LargestNumber {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in); 
 		System.out.println("How many numbers would you like to enter?");

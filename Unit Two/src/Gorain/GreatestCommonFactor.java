@@ -1,12 +1,12 @@
 package Gorain;
 import java.util.Scanner;
-public class GreatestCommonFactor {
 /**
  * Greatest Common Factor
  * Finds the greatest common factor of an entered number
  * @author Snehan Gorain
  * April 3 2017
  */
+public class GreatestCommonFactor {
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
 		int x = 0;

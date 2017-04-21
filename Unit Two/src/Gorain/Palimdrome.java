@@ -1,7 +1,13 @@
 package Gorain;
 import java.util.Scanner;
-public class Palimdrome {
+/**
+ * Palimdrome
+ * Determines if an entered word is a palimdrome or not
+ * @author Snehan Gorain
+ * April 19 2017
+ */
 
+public class Palimdrome {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Enter a word");

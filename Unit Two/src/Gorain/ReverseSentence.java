@@ -1,13 +1,12 @@
 package Gorain;
 import java.util.Scanner;
+/**
+ * Reverse Sentence
+ * Prints a sentence (input) with the letters in each word in reverse order
+ * @author Snehan Gorain
+ * April 7 2017
+ */
 public class ReverseSentence {
-	
-	/**
-	 * Reverse Sentence
-	 * Prints a sentence (input) with the letters in each word in reverse order
-	 * @author Snehan Gorain
-	 * April 7 2017
-	 */
 	
 	public static void main(String[] args){
 		Scanner sc = new Scanner (System.in);

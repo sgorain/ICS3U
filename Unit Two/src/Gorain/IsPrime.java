@@ -1,12 +1,12 @@
 package Gorain;
 import java.util.Scanner;
+/**
+ * isPrime
+ * Determines if an entered number is prime or not prime
+ * @author Snehan Gorain
+ * April 3 2017
+ */
 public class IsPrime {
-	/**
-	 * isPrime
-	 * Determines if an entered number is prime or not prime
-	 * @author Snehan Gorain
-	 * April 3 2017
-	 */
 	public static void main(String [] args){
 		Scanner input = new Scanner(System.in);
 		int x = 0;
