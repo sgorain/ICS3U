@@ -6,7 +6,12 @@ package Culminating;
  */
 import lejos.robotics.subsumption.Arbitrator;
 import lejos.robotics.subsumption.Behavior;
-
+/**
+ * Arbitrator Class
+ * @author 334752052
+ * Snehan Gorain
+ * 15/06/2017
+ */
 public class MyArbitrator {
 
 	public static void main(String [] args){
