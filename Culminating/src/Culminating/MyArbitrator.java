@@ -1,5 +1,9 @@
 package Culminating;
-
+/* Culminating Project
+ * Completes a simple maze/obstacle course
+ * @author Snehan Gorain
+ * June 14 2017
+ */
 import lejos.robotics.subsumption.Arbitrator;
 import lejos.robotics.subsumption.Behavior;
 
