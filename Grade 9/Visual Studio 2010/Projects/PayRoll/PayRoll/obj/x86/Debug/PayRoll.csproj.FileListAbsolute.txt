@@ -1,0 +1,9 @@
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\bin\Debug\PayRoll.exe
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\bin\Debug\PayRoll.pdb
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\PayRoll.exe
+H:\Visual Studio 2010\Projects\PayRoll\PayRoll\obj\x86\Debug\PayRoll.pdb

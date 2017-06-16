@@ -1,0 +1,210 @@
+package Gorain;
+import java.util.Scanner;
+public class testGameOfLife {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		char [][] grid = new char[20][20];
+		int yPoint, xPoint;
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				grid[row][column]='O';
+			}
+		}
+			
+			
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+					System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+			}	
+		boolean addCoordinates = true;
+		while(addCoordinates){
+			System.out.println("Enter an x-coordinate");
+			xPoint = input.nextInt();
+			
+			System.out.println("Enter a y-coordinate");
+			yPoint= input.nextInt();
+			
+			grid[xPoint-1][yPoint-1] = 'X';
+			
+			System.out.println("Would you like to add more live cells? (Y/N)");
+		
+			input.nextLine();
+			if(input.nextLine().equals("N")){
+				addCoordinates = false;
+			}
+
+
+		}
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				System.out.print(grid[row][column]);
+			}
+			System.out.println();
+		}
+		
+		int neighbour = 0;
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[row].length; column++){
+				
+				//For corners
+				if(row==0 && column == 0){
+					if(grid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 0 && column == 19){
+					if(grid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 19 && column == 0){
+					if(grid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+	
+				else if(row == 19 && column == 19){
+					if(grid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+	
+				}
+				//For the sides
+				else if(row == 0){
+					if(grid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(row == 19){
+					if(grid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row-1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				
+				else if(column == 0){
+					if(grid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(column == 19){
+					if(grid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(grid [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(grid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				
+				//For the middle
+				else {
+				
+				
+					if(grid [row-1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(grid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+					System.out.println(neighbour);
+				}
+
+			}
+
+		}
+	}
+}
+

@@ -1,0 +1,20 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\bin\Debug\DecideMyMeal.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\bin\Debug\DecideMyMeal.pdb
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\DecideMyMeal.AboutBox1.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\DecideMyMeal.Form1.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\DecideMyMeal.Properties.Resources.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\DecideMyMeal.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\DecideMyMeal\obj\x86\Debug\DecideMyMeal.pdb
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\DecideMyMeal.exe
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\DecideMyMeal.pdb
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\bin\Debug\DecideMyMeal.exe
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\bin\Debug\DecideMyMeal.pdb
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\ResolveAssemblyReference.cache
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\DecideMyMeal.AboutBox1.resources
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\DecideMyMeal.Form1.resources
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\DecideMyMeal.Properties.Resources.resources
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\GenerateResource.read.1.tlog
+h:\visual studio 2010\Projects\DecideMyMeal\DecideMyMeal\obj\x86\Debug\GenerateResource.write.1.tlog

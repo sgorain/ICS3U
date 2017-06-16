@@ -1,0 +1,50 @@
+package Gorain;
+import java.util.Scanner;
+public class testGameOfLife {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		char [][] grid = new char[20][20];
+		int yPoint, xPoint;
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				grid[row][column]='O';
+			}
+		}
+			
+			
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+					System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+			}	
+		boolean addCoordinates = true;
+		while(addCoordinates){
+			System.out.println("Enter an x-coordinate");
+			xPoint = input.nextInt();
+			
+			System.out.println("Enter a y-coordinate");
+			yPoint= input.nextInt();
+			
+			grid[xPoint-1][yPoint-1] = 'X';
+			
+			System.out.println("Would you like to add more live cells? (Y/N)");
+		
+			input.nextLine();
+			if(input.nextLine().equals("N")){
+				addCoordinates = false;
+			}
+
+
+		}
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				System.out.println(grid[row][column]);
+			}
+		}
+
+	}
+
+}

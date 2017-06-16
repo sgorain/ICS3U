@@ -1,0 +1,6 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\Challenge1\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio 2010\Projects\Challenge1\Challenge1\bin\Debug\Challenge1.exe
+H:\Visual Studio 2010\Projects\Challenge1\Challenge1\bin\Debug\Challenge1.pdb
+H:\Visual Studio 2010\Projects\Challenge1\Challenge1\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio 2010\Projects\Challenge1\Challenge1\obj\x86\Debug\Challenge1.exe
+H:\Visual Studio 2010\Projects\Challenge1\Challenge1\obj\x86\Debug\Challenge1.pdb

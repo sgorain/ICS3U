@@ -1,0 +1,47 @@
+package Gorain;
+import java.util.Scanner;
+public class ArrayGame {
+/**
+ * 
+ * @param args
+ */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int [][] array = new int[20][20];
+		int xPoint, yPoint;
+		for(int row = 0; row<array.length; row++){
+			for(int column = 0; column < array[0].length; column++){
+				array[row][column]=0;
+			}
+			
+		boolean addCoordinates = true;
+		while(addCoordinates){
+			System.out.println("Enter an x-coordinate");
+			xPoint = input.nextInt();
+			
+			System.out.println("Enter a y-coordinate");
+			yPoint= input.nextInt();
+			
+			array[xPoint-1][yPoint-1] = 'X';
+			
+			System.out.println("Would you like to add more live cells? (Y/N)");
+			
+			if(input.toString() == "Y"){
+				addCoordinates = false;
+			}
+
+
+		}
+		for(row = 0; row<array.length; row++){
+			for(int column = 0; column < array[0].length; column++){
+				System.out.print(array[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+		}
+		}
+	}
+}
+
+		
+

@@ -1,0 +1,18 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\bin\Debug\InterestChart.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\bin\Debug\InterestChart.pdb
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\InterestChart.Form1.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\InterestChart.Properties.Resources.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\InterestChart.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\InterestChart\obj\x86\Debug\InterestChart.pdb
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\InterestChart.exe
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\InterestChart.pdb
+h:\visual studio 2010\Projects\InterestChart\InterestChart\bin\Debug\InterestChart.exe
+h:\visual studio 2010\Projects\InterestChart\InterestChart\bin\Debug\InterestChart.pdb
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\ResolveAssemblyReference.cache
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\InterestChart.Form1.resources
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\InterestChart.Properties.Resources.resources
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\GenerateResource.read.1.tlog
+h:\visual studio 2010\Projects\InterestChart\InterestChart\obj\x86\Debug\GenerateResource.write.1.tlog

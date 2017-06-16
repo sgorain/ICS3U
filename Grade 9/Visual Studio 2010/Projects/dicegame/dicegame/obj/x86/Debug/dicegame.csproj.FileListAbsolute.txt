@@ -1,0 +1,9 @@
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\dicegame.Form1.resources
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\dicegame.Properties.Resources.resources
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\Visual Studio 2010\Projects\dicegame\dicegame\bin\Debug\dicegame.exe
+H:\Visual Studio 2010\Projects\dicegame\dicegame\bin\Debug\dicegame.pdb
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\dicegame.exe
+H:\Visual Studio 2010\Projects\dicegame\dicegame\obj\x86\Debug\dicegame.pdb

@@ -1,0 +1,10 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\RichorPoor\bin\Debug\RichorPoor.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\RichorPoor\bin\Debug\RichorPoor.pdb
+C:\Users\334752052\AppData\Local\Temporary Projects\RichorPoor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\334752052\AppData\Local\Temporary Projects\RichorPoor\obj\x86\Debug\RichorPoor.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\RichorPoor\obj\x86\Debug\RichorPoor.pdb
+H:\Visual Studio 2010\Projects\RichorPoor\RichorPoor\obj\x86\Debug\RichorPoor.exe
+H:\Visual Studio 2010\Projects\RichorPoor\RichorPoor\obj\x86\Debug\RichorPoor.pdb
+H:\Visual Studio 2010\Projects\RichorPoor\RichorPoor\bin\Debug\RichorPoor.exe
+H:\Visual Studio 2010\Projects\RichorPoor\RichorPoor\bin\Debug\RichorPoor.pdb
+H:\Visual Studio 2010\Projects\RichorPoor\RichorPoor\obj\x86\Debug\ResolveAssemblyReference.cache

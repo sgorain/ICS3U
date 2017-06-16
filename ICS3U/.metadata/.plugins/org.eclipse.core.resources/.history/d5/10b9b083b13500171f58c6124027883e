@@ -1,0 +1,277 @@
+package Gorain;
+import java.util.Scanner;
+public class ArrayGame {
+/**
+ * 
+ * @param args
+ */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		char [][] grid = new char[20][20];
+		int xPoint, yPoint;
+		int day = 1;
+		
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				grid[row][column]='O';
+			}
+		}
+			
+			
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+					System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+			}	
+		boolean addCoordinates = true;
+		while(addCoordinates){
+			System.out.println("Enter an x-coordinate");
+			xPoint = input.nextInt();
+			
+			System.out.println("Enter a y-coordinate");
+			yPoint= input.nextInt();
+			
+			grid[xPoint-1][yPoint-1] = 'X';
+			
+			System.out.println("Would you like to add more live cells? (Y/N)");
+		
+			input.nextLine();
+			if(input.nextLine().equals("N")){
+				addCoordinates = false;
+			}
+
+
+		}
+		System.out.println("Day 1");
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+		
+		}
+		System.out.println();
+		
+		boolean continueGame = true;
+		while(continueGame){
+			int liveCells = 0;
+			for(int row = 0; row<grid.length; row++){
+				for(int column = 0; column < grid[row].length; column++){
+					if(grid[row][column]=='X'){
+						liveCells++;
+					}
+				}
+			}
+			
+			if (liveCells == 0){
+				continueGame = false;
+				System.out.println("GAME OVER");
+				System.out.println("All your cells have died");
+			}
+			
+			else {
+				System.out.println("Do you want to play another day? (Y/N)");
+				
+		
+				if(input.nextLine().equals("N")){
+					continueGame = false;
+				}
+				grid = nextDay(grid);
+				for(int row = 0; row < 20; row++){
+					for(int column = 0; column < 20; column++){
+							System.out.print(grid[row][column]+ " ");
+					}
+				System.out.println();
+				System.out.println();
+				}
+		}
+	} 
+	}
+	public static char[][] nextDay(char[][] modifyGrid){
+		int neighbour=0;
+		char [][] finalGrid = modifyGrid;
+		for(int row = 0; row<modifyGrid.length; row++){
+			for(int column = 0; column < modifyGrid[row].length; column++){
+				
+				//For corners
+				if(row==0 && column == 0){
+					if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 0 && column == 19){
+					if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 19 && column == 0){
+					if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+	
+				else if(row == 19 && column == 19){
+					if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+	
+				}
+				//For the sides
+				else if(row == 0){
+					if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(row == 19){
+					if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				
+				else if(column == 0){
+					if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(column == 19){
+					if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(modifyGrid [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(modifyGrid [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				
+				//For the middle
+				else {
+				
+				
+					if(modifyGrid [row-1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row+1][column]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(modifyGrid [row-1][column]=='X'){
+						neighbour +=1;
+					}
+			}
+			
+			//for live cell
+			if (modifyGrid [row][column]=='X') {	
+				if(neighbour < 2 || neighbour > 3){
+					finalGrid [row][column] = 'O';
+				}
+				
+			}
+			
+			//Resurrecting dead cell
+			else {
+				if (neighbour == 3){
+					finalGrid [row][column] = 'X';
+				}
+			}
+			
+			neighbour = 0;
+			}
+		}
+	
+		return finalGrid;
+	}
+	
+}
+				
+
+
+		
+

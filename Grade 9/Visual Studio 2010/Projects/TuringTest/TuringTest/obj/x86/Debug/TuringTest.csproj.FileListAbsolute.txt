@@ -1,0 +1,10 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\TuringTest\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\334752052\AppData\Local\Temporary Projects\TuringTest\bin\Debug\TuringTest.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\TuringTest\bin\Debug\TuringTest.pdb
+C:\Users\334752052\AppData\Local\Temporary Projects\TuringTest\obj\x86\Debug\TuringTest.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\TuringTest\obj\x86\Debug\TuringTest.pdb
+H:\Visual Studio 2010\Projects\TuringTest\TuringTest\obj\x86\Debug\TuringTest.exe
+H:\Visual Studio 2010\Projects\TuringTest\TuringTest\obj\x86\Debug\TuringTest.pdb
+H:\Visual Studio 2010\Projects\TuringTest\TuringTest\bin\Debug\TuringTest.exe
+H:\Visual Studio 2010\Projects\TuringTest\TuringTest\bin\Debug\TuringTest.pdb
+H:\Visual Studio 2010\Projects\TuringTest\TuringTest\obj\x86\Debug\ResolveAssemblyReference.cache

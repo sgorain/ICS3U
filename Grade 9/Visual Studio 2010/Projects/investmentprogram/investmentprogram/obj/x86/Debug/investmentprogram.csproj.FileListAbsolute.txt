@@ -1,0 +1,18 @@
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\bin\Debug\investmentprogram.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\bin\Debug\investmentprogram.pdb
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\investmentprogram.Form1.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\investmentprogram.Properties.Resources.resources
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\investmentprogram.exe
+C:\Users\334752052\AppData\Local\Temporary Projects\investmentprogram\obj\x86\Debug\investmentprogram.pdb
+h:\visual studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\investmentprogram.exe
+h:\visual studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\investmentprogram.pdb
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\investmentprogram.Form1.resources
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\investmentprogram.Properties.Resources.resources
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\bin\Debug\investmentprogram.exe
+H:\Visual Studio 2010\Projects\investmentprogram\investmentprogram\bin\Debug\investmentprogram.pdb

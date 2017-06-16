@@ -1,0 +1,5 @@
+C:\Users\TEMP\AppData\Local\Temporary Projects\Turing\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\TEMP\AppData\Local\Temporary Projects\Turing\bin\Debug\Turing.exe
+C:\Users\TEMP\AppData\Local\Temporary Projects\Turing\bin\Debug\Turing.pdb
+C:\Users\TEMP\AppData\Local\Temporary Projects\Turing\obj\x86\Debug\Turing.exe
+C:\Users\TEMP\AppData\Local\Temporary Projects\Turing\obj\x86\Debug\Turing.pdb

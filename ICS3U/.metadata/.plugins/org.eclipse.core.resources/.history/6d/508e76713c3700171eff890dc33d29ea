@@ -1,0 +1,296 @@
+package Gorain;
+import java.util.Scanner;
+public class ArrayGame {
+/**
+ * 
+ * @param args
+ */
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		char [][] grid = new char[20][20];
+		int xPoint, yPoint;
+		int day = 1;
+		
+		//Initialize grid
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				grid[row][column]='O';
+			}
+		}
+			
+		//Print grid	
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+					System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+			}	
+		
+		//Entering live cells
+		boolean addCoordinates = true;
+		while(addCoordinates){
+			System.out.println("Enter an x-coordinate");
+			xPoint = input.nextInt();
+			
+			System.out.println("Enter a y-coordinate");
+			yPoint= input.nextInt();
+			
+			grid[xPoint-1][yPoint-1] = 'X';
+			
+			System.out.println("Would you like to add more live cells? (Y/N)");
+		
+			input.nextLine();
+			if(input.nextLine().equals("N")){
+				addCoordinates = false;
+			}
+
+
+		}
+		
+		//Print  first day 
+		System.out.println("Day 1");
+		for(int row = 0; row<grid.length; row++){
+			for(int column = 0; column < grid[0].length; column++){
+				System.out.print(grid[row][column] + (" "));
+			}
+			System.out.println();
+			System.out.println();
+		
+		}
+		System.out.println();
+		
+		//Playing the next day
+		boolean continueGame = true;
+		while(continueGame){
+			int liveCells = 0;
+			
+			//Count how many live cells
+			for(int row = 0; row<grid.length; row++){
+				for(int column = 0; column < grid[row].length; column++){
+					if(grid[row][column]=='X'){
+						liveCells++;
+					}
+				}
+			}
+			
+			//Game Over
+			if (liveCells == 0){
+				continueGame = false;
+				System.out.println("GAME OVER");
+				System.out.println("All your cells have died");
+			}
+			
+			//To play next day
+			else {
+				System.out.println("Do you want to play another day? (Y/N)");
+				
+		
+				if(input.nextLine().equals("N")){
+					continueGame = false;
+				}
+				else{
+				grid = nextDay(grid);
+				day ++;
+				System.out.println(day);
+				for(int row = 0; row < grid.length; row++){
+					for(int column = 0; column < grid[row].length; column++){
+							System.out.print(grid[row][column]+ " ");
+					}
+				System.out.println();
+				System.out.println();
+				}
+				}
+		}
+	} 
+	}
+	public static char[][] nextDay(char[][] previousDay){
+		
+		int neighbour = 0;
+		char [][] nextDay = new char[20][20];
+		
+		for(int row = 0; row<previousDay.length; row++){
+			for(int column = 0; column < previousDay[row].length; column++){
+				neighbour = 0;
+				
+				//For corners
+				if(row==0 && column == 0){
+					if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 0 && column == 19){
+					if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				else if(row == 19 && column == 0){
+					if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				}
+	
+				else if(row == 19 && column == 19){
+					if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+	
+				}
+				//For the sides
+				else if(row == 0){
+					if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row+1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(row == 19){
+					if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				
+				else if(column == 0){
+					if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row-1][column+1]=='X'){
+						neighbour +=1;
+				    }
+				   
+				}
+				else if(column == 19){
+					if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+				    }
+				    if(previousDay [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+				    if(previousDay [row-1][column-1]=='X'){
+						neighbour +=1;
+				    }
+				}
+				
+				//For the middle
+				else {
+				
+				
+					if(previousDay [row-1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row+1][column-1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row+1][column]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row+1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row-1][column+1]=='X'){
+						neighbour +=1;
+					}
+					if(previousDay [row-1][column]=='X'){
+						neighbour +=1;
+					}
+			}
+				if (previousDay[row][column] =='X'){
+					if (neighbour > 3 || neighbour < 2){
+						nextDay[row][column] = 'O';
+					}
+					else{
+						nextDay[row][column]='X';
+					}
+				}
+				else{
+					
+					if(neighbour == 3){
+						nextDay [row][column] = 'X';
+					}
+					else{
+						nextDay [row][column] = 'O';
+					}
+					
+				}
+				
+			}
+		}
+	
+		return nextDay;
+	}
+	
+}
+				
+
+
+		
+
