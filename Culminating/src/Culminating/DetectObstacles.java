@@ -30,7 +30,7 @@ public class DetectObstacles implements Behavior {
 	
 		Motor.A.rotate(360); //rotates 90 degrees
 		
-		//If there is another obstacle 90 degrees awat from the original direction
+		//If there is another obstacle 90 degrees away from the original direction
 		if(sonar.getDistance()<20){
 			Motor.A.rotate(-720); //rotates the opposite way 180 degrees
 		}

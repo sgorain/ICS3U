@@ -17,7 +17,7 @@ public class DetectFinish implements Behavior{
 	//Take control when finish line (tape) is detected
 	public boolean takeControl(){
 		//Detects white paper or tape - indicates finish of obstacle course
-		if(light.getLightValue()>50){
+		if(light.getLightValue() < 40){
 			return true;
 		}
 		return false;
